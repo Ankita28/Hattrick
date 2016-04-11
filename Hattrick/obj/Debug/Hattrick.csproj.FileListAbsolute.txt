@@ -1,0 +1,12 @@
+c:\users\anuraag\documents\visual studio 2012\Projects\Hattrick\Hattrick\bin\Debug\Hattrick.exe.config
+c:\users\anuraag\documents\visual studio 2012\Projects\Hattrick\Hattrick\bin\Debug\Hattrick.exe
+c:\users\anuraag\documents\visual studio 2012\Projects\Hattrick\Hattrick\bin\Debug\Hattrick.pdb
+c:\users\anuraag\documents\visual studio 2012\Projects\Hattrick\Hattrick\obj\Debug\Hattrick.csprojResolveAssemblyReference.cache
+c:\users\anuraag\documents\visual studio 2012\Projects\Hattrick\Hattrick\obj\Debug\Hattrick.AuthForm.resources
+c:\users\anuraag\documents\visual studio 2012\Projects\Hattrick\Hattrick\obj\Debug\Hattrick.LoginScreen.resources
+c:\users\anuraag\documents\visual studio 2012\Projects\Hattrick\Hattrick\obj\Debug\Hattrick.Properties.Resources.resources
+c:\users\anuraag\documents\visual studio 2012\Projects\Hattrick\Hattrick\obj\Debug\Hattrick.SplashForm.resources
+c:\users\anuraag\documents\visual studio 2012\Projects\Hattrick\Hattrick\obj\Debug\Hattrick.csproj.GenerateResource.Cache
+c:\users\anuraag\documents\visual studio 2012\Projects\Hattrick\Hattrick\obj\Debug\Hattrick.exe
+c:\users\anuraag\documents\visual studio 2012\Projects\Hattrick\Hattrick\obj\Debug\Hattrick.pdb
+C:\Users\Anuraag\Documents\Visual Studio 2012\Projects\Hattrick\Hattrick\obj\Debug\Hattrick.OwnerScreen.resources
