@@ -122,8 +122,9 @@ insert into playerpool values(125,'Barinder Sran','Bowler',3,'Indian');
 insert into playerpool values(126,'Aditya Tare','Batsman',3,'Indian');
 insert into playerpool values(127,'Kane Williamson','Batsman',4,'New Zealander');
 insert into playerpool values(128,'Yuvraj Singh','Batsman',5,'Indian');
+insert into playerpool values(129, 'Sachin Tendulkar', 'All Rounder',8,'Indian');
 
-create table teaminfo(teamid varchar(20),teamname varchar(40),coach varchar(20),captain varchar(20), hometown varchar(20), budget number,num_indian number, num_foreign number,iplwins number, primary key (teamid));
+create table teaminfo(teamid varchar(20),teamname varchar(40),coach varchar(20),captain varchar(20), hometown varchar(20), budget integer,num_indian integer, num_foreign integer,iplwins integer, primary key (teamid));
 insert into teaminfo values('1A','Rising Pune Supergiants','Stephen Fleming','MS Dhoni','Pune',60,null,null,0);
 insert into teaminfo values('1B','Sunrisers Hyderabad','Tom Moody','David Warner','Hyderabad',60,null,null,0);
 insert into teaminfo values('1C','Kings XI Punjab','Sanjay Bangar','David Miller','Punjab',60,null,null,0);
@@ -132,6 +133,7 @@ insert into teaminfo values('1E','Delhi Daredevils','Paddy Upton','Zaheer Khan',
 insert into teaminfo values('1F','Mumbai Indians','Ricky Ponting','Rohit Sharma','Mumbai',60,null,null,2);
 insert into teaminfo values('1G','Kolkatta Knight Riders','Trevor Bayliss','Gautam Gambhir','Kolkatta',60,null,null,2);
 insert into teaminfo values('1H','Gujarat Lions','Brad Hodge','Suresh Raina','Gujarat',60,null,null,0);
+
 create table Users(name varchar(20),teamid varchar(20),username varchar(20),password varchar(20), primary key (username), foreign key (teamid) references teaminfo(teamid));
 insert into users values('RPSG Group','1A','RPSG','RPSG');
 insert into users values('Kalanithi Maran','1B','Kalanithi','Kalanithi');
@@ -143,9 +145,10 @@ insert into users values('Shahrukh Khan','1G','Shahrukh','Shahrukh');
 insert into users values('Juhi Chawala','1G','Juhi','Juhi');
 insert into users values('Jay Mehta','1G','Jay','Jay');
 insert into users values('Intex Technologies','1H','Intex','Intex');
-create table playerinfo(playerid number,
 
-
+create table playerinfo(playerid integer, name varchar(20), speciality varchar(20), salary integer, 
+nationality varchar(20), teamid varchar(20), contract integer, primary key (playerid), foreign key (playerid) references playerpool(playerid), 
+foreign key (teamid) references teaminfo(teamid));
 insert into playerinfo values (1, 'Zaheer Khan', 'Bowler', 5, 'Indian',null,3);
 insert into playerinfo values (2, 'Mayank Agarwal', 'Batsman', 1, 'Indian',null,3);
 insert into playerinfo values (3, 'Carlos Brathwaite', 'All Rounder', 4, 'West Indian',null,3);
@@ -267,5 +270,5 @@ insert into playerinfo values(125,'Barinder Sran','Bowler',3,'Indian',null,3);
 insert into playerinfo values(126,'Aditya Tare','Batsman',3,'Indian',null,3);
 insert into playerinfo values(127,'Kane Williamson','Batsman',4,'New Zealander',null,3);
 insert into playerinfo values(128,'Yuvraj Singh','Batsman',5,'Indian',null,3);
-
+insert into playerinfo values(129, 'Sachin Tendulkar', 'All Rounder',8,'Indian',null,3);
 

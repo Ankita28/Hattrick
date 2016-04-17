@@ -31,5 +31,17 @@ namespace Hattrick
             }
 
         }
+
+        private void startButton_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void playerPoolButton_Click(object sender, EventArgs e)
+        {
+            PlayerPoolForm playerPoolForm = new PlayerPoolForm();
+            this.Hide();
+            playerPoolForm.Show();
+        }
     }
 }

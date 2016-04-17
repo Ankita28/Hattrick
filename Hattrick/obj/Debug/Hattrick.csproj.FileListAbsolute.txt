@@ -10,3 +10,4 @@ c:\users\anuraag\documents\visual studio 2012\Projects\Hattrick\Hattrick\obj\Deb
 c:\users\anuraag\documents\visual studio 2012\Projects\Hattrick\Hattrick\obj\Debug\Hattrick.exe
 c:\users\anuraag\documents\visual studio 2012\Projects\Hattrick\Hattrick\obj\Debug\Hattrick.pdb
 C:\Users\Anuraag\Documents\Visual Studio 2012\Projects\Hattrick\Hattrick\obj\Debug\Hattrick.OwnerScreen.resources
+C:\Users\Anuraag\Documents\Visual Studio 2012\Projects\Hattrick\Hattrick\obj\Debug\Hattrick.PlayerPoolForm.resources
