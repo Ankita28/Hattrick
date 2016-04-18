@@ -11,10 +11,11 @@ using System.Windows.Forms;
 namespace Hattrick
 {
     public partial class LoginScreen : Form
-    {
+    {   
         public LoginScreen()
         {
             InitializeComponent();
+            
         }
 
         private void LoginScreen_FormClosed(object sender, FormClosedEventArgs e)
@@ -28,5 +29,6 @@ namespace Hattrick
             this.Hide();
             authForm.Show();
         }
+
     }
 }

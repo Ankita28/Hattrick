@@ -12,9 +12,11 @@ namespace Hattrick
 {
     public partial class OwnerScreen : Form
     {
-        public OwnerScreen()
+        public OwnerScreen(string team)
         {
             InitializeComponent();
+            this.Text = team;
+            this.Update();
         }
 
         private void OwnerScreen_FormClosed(object sender, FormClosedEventArgs e)
