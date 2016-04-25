@@ -31,17 +31,20 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PlayerPoolForm));
             this.playerPoolGrid = new System.Windows.Forms.DataGridView();
-            this.hattrickDataSet = new Hattrick.hattrickDataSet();
-            this.playerpoolBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.playerpoolTableAdapter = new Hattrick.hattrickDataSetTableAdapters.playerpoolTableAdapter();
             this.playeridDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.specialityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.basepriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nationalityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.playerpoolBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hattrickDataSet = new Hattrick.hattrickDataSet();
+            this.playerpoolTableAdapter = new Hattrick.hattrickDataSetTableAdapters.playerpoolTableAdapter();
+            this.playerTextBox = new System.Windows.Forms.TextBox();
+            this.addButton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.playerPoolGrid)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hattrickDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.playerpoolBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hattrickDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // playerPoolGrid
@@ -61,20 +64,6 @@
             this.playerPoolGrid.RowTemplate.Height = 28;
             this.playerPoolGrid.Size = new System.Drawing.Size(850, 570);
             this.playerPoolGrid.TabIndex = 0;
-            // 
-            // hattrickDataSet
-            // 
-            this.hattrickDataSet.DataSetName = "hattrickDataSet";
-            this.hattrickDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // playerpoolBindingSource
-            // 
-            this.playerpoolBindingSource.DataMember = "playerpool";
-            this.playerpoolBindingSource.DataSource = this.hattrickDataSet;
-            // 
-            // playerpoolTableAdapter
-            // 
-            this.playerpoolTableAdapter.ClearBeforeFill = true;
             // 
             // playeridDataGridViewTextBoxColumn
             // 
@@ -106,12 +95,60 @@
             this.nationalityDataGridViewTextBoxColumn.HeaderText = "nationality";
             this.nationalityDataGridViewTextBoxColumn.Name = "nationalityDataGridViewTextBoxColumn";
             // 
+            // playerpoolBindingSource
+            // 
+            this.playerpoolBindingSource.DataMember = "playerpool";
+            this.playerpoolBindingSource.DataSource = this.hattrickDataSet;
+            // 
+            // hattrickDataSet
+            // 
+            this.hattrickDataSet.DataSetName = "hattrickDataSet";
+            this.hattrickDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // playerpoolTableAdapter
+            // 
+            this.playerpoolTableAdapter.ClearBeforeFill = true;
+            // 
+            // playerTextBox
+            // 
+            this.playerTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playerTextBox.Location = new System.Drawing.Point(50, 651);
+            this.playerTextBox.Name = "playerTextBox";
+            this.playerTextBox.Size = new System.Drawing.Size(286, 32);
+            this.playerTextBox.TabIndex = 1;
+            // 
+            // addButton
+            // 
+            this.addButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(123)))), ((int)(((byte)(137)))));
+            this.addButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addButton.Font = new System.Drawing.Font("Impact", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.addButton.Location = new System.Drawing.Point(353, 644);
+            this.addButton.Name = "addButton";
+            this.addButton.Size = new System.Drawing.Size(75, 39);
+            this.addButton.TabIndex = 2;
+            this.addButton.Text = "Add";
+            this.addButton.UseVisualStyleBackColor = false;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(50, 625);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(180, 20);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Enter Player ID to select";
+            // 
             // PlayerPoolForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(943, 644);
+            this.ClientSize = new System.Drawing.Size(943, 695);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.addButton);
+            this.Controls.Add(this.playerTextBox);
             this.Controls.Add(this.playerPoolGrid);
             this.Name = "PlayerPoolForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -119,9 +156,10 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.PlayerPoolForm_FormClosed);
             this.Load += new System.EventHandler(this.PlayerPoolForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.playerPoolGrid)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hattrickDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.playerpoolBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hattrickDataSet)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -136,6 +174,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn specialityDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn basepriceDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nationalityDataGridViewTextBoxColumn;
+        private System.Windows.Forms.TextBox playerTextBox;
+        private System.Windows.Forms.Button addButton;
+        private System.Windows.Forms.Label label1;
 
     }
 }

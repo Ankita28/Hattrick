@@ -12,7 +12,8 @@ namespace Hattrick
 {
     public partial class PlayerPoolForm : Form
     {
-        public PlayerPoolForm()
+        string teamId;
+        public PlayerPoolForm(string teamId)
         {
             InitializeComponent();
             playerPoolGrid.Columns[0].HeaderText = "Player ID";
@@ -20,6 +21,7 @@ namespace Hattrick
             playerPoolGrid.Columns[2].HeaderText = "Speciality";
             playerPoolGrid.Columns[3].HeaderText = "Base Price in Crores";
             playerPoolGrid.Columns[4].HeaderText = "Nationality";
+            this.teamId = teamId;
         }
 
         private void PlayerPoolForm_Load(object sender, EventArgs e)
@@ -46,6 +48,16 @@ namespace Hattrick
         private void PlayerPoolForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void addButton_Click(object sender, EventArgs e)
+        {
+            string connectionString = "server=Lenovo-PC;uid=anuraag;pwd=razerbeats296;database=hattrick;";
+            string sql = "call setTeam('" + teamId +"','" + playerTextBox.Text+"');";
+            MySqlConnection connection = new MySqlConnection(connectionString);
+            connection.Open();
+            MySqlCommand sCommand = new MySqlCommand(sql, connection);
+            sCommand.ExecuteNonQuery();
         }
 
     }

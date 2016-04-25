@@ -55,7 +55,7 @@ insert into playerpool values (52, 'Brad Hogg', 'All Rounder', 3, 'Australian');
 insert into playerpool values (53, 'Jaydev Unadkat', 'Bowler', 3, 'Indian');
 
 insert into playerpool values(61,'Rohit Sharma','Batsman',5,'Indian');
-insert into playerpool values(62,'Corey Anderson','Batsman',4,'Australian')
+insert into playerpool values(62,'Corey Anderson','Batsman',4,'Australian');
 insert into playerpool values(63,'Jasprit Bumrah','Bowler',5,'Indian');
 insert into playerpool values(64,'Unmukt Chand','Batsman',3,'Indian');
 insert into playerpool values(65,'Marchant de Lange','Bowler',3,'South African');
@@ -203,7 +203,7 @@ insert into playerinfo values (51, 'Morne Morkel', 'Bowler', 4, 'Indian',null,3)
 insert into playerinfo values (52, 'Brad Hogg', 'All Rounder', 3, 'Australian',null,3);
 insert into playerinfo values (53, 'Jaydev Unadkat', 'Bowler', 3, 'Indian',null,3);
 insert into playerinfo values(61,'Rohit Sharma','Batsman',5,'Indian',null,3);
-insert into playerinfo values(62,'Corey Anderson','Batsman',4,'Australian')
+insert into playerinfo values(62,'Corey Anderson','Batsman',4,'Australian',null,3);
 insert into playerinfo values(63,'Jasprit Bumrah','Bowler',5,'Indian',null,3);
 insert into playerinfo values(64,'Unmukt Chand','Batsman',3,'Indian',null,3);
 insert into playerinfo values(65,'Marchant de Lange','Bowler',3,'South African',null,3);

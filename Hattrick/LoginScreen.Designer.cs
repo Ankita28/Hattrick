@@ -40,10 +40,9 @@
             this.loginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.loginButton.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginButton.ForeColor = System.Drawing.Color.White;
-            this.loginButton.Location = new System.Drawing.Point(158, 114);
-            this.loginButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.loginButton.Location = new System.Drawing.Point(237, 175);
             this.loginButton.Name = "loginButton";
-            this.loginButton.Size = new System.Drawing.Size(151, 40);
+            this.loginButton.Size = new System.Drawing.Size(226, 62);
             this.loginButton.TabIndex = 0;
             this.loginButton.Text = "Login as Owner";
             this.loginButton.UseVisualStyleBackColor = false;
@@ -56,27 +55,25 @@
             this.continueButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.continueButton.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.continueButton.ForeColor = System.Drawing.Color.White;
-            this.continueButton.Location = new System.Drawing.Point(159, 160);
-            this.continueButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.continueButton.Location = new System.Drawing.Point(238, 246);
             this.continueButton.Name = "continueButton";
-            this.continueButton.Size = new System.Drawing.Size(151, 40);
+            this.continueButton.Size = new System.Drawing.Size(226, 62);
             this.continueButton.TabIndex = 1;
             this.continueButton.Text = "Continue as Guest";
             this.continueButton.UseVisualStyleBackColor = false;
             // 
             // LoginScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(451, 320);
+            this.ClientSize = new System.Drawing.Size(676, 492);
             this.Controls.Add(this.continueButton);
             this.Controls.Add(this.loginButton);
             this.ForeColor = System.Drawing.Color.AliceBlue;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "LoginScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "LoginScreen";
+            this.Text = "Login";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.LoginScreen_FormClosed);
             this.ResumeLayout(false);
 

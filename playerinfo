@@ -1,0 +1,126 @@
++----------+---------------------+--------------+--------+---------------+--------+----------+
+| playerid | name                | speciality   | salary | nationality   | teamid | contract |
++----------+---------------------+--------------+--------+---------------+--------+----------+
+|        1 | Zaheer Khan         | Bowler       |      5 | Indian        | 1E     |        3 |
+|        2 | Mayank Agarwal      | Batsman      |      1 | Indian        | 1E     |        3 |
+|        3 | Carlos Brathwaite   | All Rounder  |      4 | West Indian   | 1E     |        3 |
+|        4 | Sam Billings        | Batsman      |      4 | English       | 1E     |        3 |
+|        5 | Nathan Coulter-Nile | Bowler       |      4 | Australian    | 1E     |        3 |
+|        6 | Quinton de Kock     | Wicketkeeper |      4 | South African | 1E     |        3 |
+|        7 | Jean-Paul Duminy    | All Rounder  |      4 | South African | 1E     |        3 |
+|        8 | Akhil Herwadkar     | All Rounder  |      1 | Indian        | 1E     |        3 |
+|        9 | Imran Tahir         | Bowler       |      4 | South African | 1E     |        3 |
+|       10 | Pawan Negi          | Bowler       |      3 | Indian        | 1E     |        3 |
+|       11 | Shreyas Iyer        | Batsman      |      4 | Indian        | 1E     |        3 |
+|       12 | Amit Mishra         | Bowler       |      5 | Indian        | 1E     |        3 |
+|       13 | Mohammad Shami      | Bowler       |      5 | Indian        | 1E     |        3 |
+|       14 | Chris Morris        | All Rounder  |      4 | South African | 1E     |        3 |
+|       15 | Sanju Samson        | Batsman      |      3 | Indian        | 1E     |        3 |
+|       16 | Suresh Raina        | All Rounder  |      5 | Indian        | 1H     |        3 |
+|       17 | Sarabjit Ladda      | Bowler       |      1 | Indian        | 1H     |        3 |
+|       18 | Dwayne Bravo        | All Rounder  |      4 | West Indian   | 1H     |        3 |
+|       19 | James Faulkner      | All Rounder  |      4 | Australian    | 1H     |        3 |
+|       20 | Aaron Finch         | Batsman      |      4 | Australian    | 1H     |        3 |
+|       21 | Ravindra Jadeja     | All Rounder  |      5 | Indian        | 1H     |        3 |
+|       22 | Shadab Jakati       | Bowler       |      3 | Indian        | 1H     |        3 |
+|       23 | Dinesh Karthik      | Wicketkeeper |      3 | Indian        | 1H     |        3 |
+|       24 | Praveen Kumar       | Bowler       |      4 | Indian        | 1H     |        3 |
+|       25 | Brendon McCullum    | Wicketkeeper |      4 | New Zealander | 1H     |        3 |
+|       26 | Dwayne Smith        | All Rounder  |      4 | West Indian   | 1H     |        3 |
+|       27 | Andrew Tye          | Bowler       |      3 | Australian    | 1H     |        3 |
+|       28 | Dale Steyn          | Bowler       |      4 | South African | 1H     |        3 |
+|       29 | Dhawal Kulkarni     | Bowler       |      2 | Indian        | 1H     |        3 |
+|       30 | Paras Dogra         | Batsman      |      1 | Indian        | 1H     |        3 |
+|       31 | David Miller        | Batsman      |      5 | South African | 1C     |        3 |
+|       32 | Kyle Abbott         | Bowler       |      3 | South African | 1C     |        3 |
+|       33 | Farhan Behardien    | All Rounder  |      4 | South African | 1C     |        3 |
+|       34 | Mitchell Johnson    | Bowler       |      5 | Australian    | 1C     |        3 |
+|       35 | Shaun Marsh         | Batsman      |      4 | Australian    | 1C     |        3 |
+|       36 | Glenn Maxwell       | All Rounder  |      4 | Australian    | 1C     |        3 |
+|       37 | Axar Patel          | Bowler       |      3 | Indian        | 1C     |        3 |
+|       38 | Wriddhiman Saha     | Wicketkeeper |      3 | Indian        | 1C     |        3 |
+|       39 | Murali Vijay        | Batsman      |      3 | Indian        | 1C     |        3 |
+|       40 | Mohit Sharma        | Bowler       |      3 | Indian        | 1C     |        3 |
+|       41 | Gautam Gambhir      | Batsman      |      5 | Indian        | 1C     |        3 |
+|       42 | Piyush Chawla       | All Rounder  |      3 | Indian        | 1C     |        3 |
+|       43 | John Hastings       | Bowler       |      3 | Australian    | 1C     |        3 |
+|       44 | Jason Holder        | All Rounder  |      4 | West Indian   | 1C     |        3 |
+|       45 | Sunil Narine        | Bowler       |      4 | West Indian   | 1C     |        3 |
+|       46 | Andre Russell       | All Rounder  |      4 | West Indian   | 1G     |        3 |
+|       47 | Shakib Al Hasan     | All Rounder  |      4 | Bangladeshi   | 1G     |        3 |
+|       48 | Robin Uthappa       | Batsman      |      4 | Indian        | 1G     |        3 |
+|       49 | Yusuf Pathan        | All Rounder  |      5 | Indian        | 1G     |        3 |
+|       50 | Umesh Yadav         | Bowler       |      5 | Indian        | 1G     |        3 |
+|       51 | Morne Morkel        | Bowler       |      4 | Indian        | 1G     |        3 |
+|       52 | Brad Hogg           | All Rounder  |      3 | Australian    | 1G     |        3 |
+|       53 | Jaydev Unadkat      | Bowler       |      3 | Indian        | 1G     |        3 |
+|       61 | Rohit Sharma        | Batsman      |      5 | Indian        | 1F     |        3 |
+|       62 | Corey Anderson      | Batsman      |      4 | Australian    | 1F     |        3 |
+|       63 | Jasprit Bumrah      | Bowler       |      5 | Indian        | 1F     |        3 |
+|       64 | Unmukt Chand        | Batsman      |      3 | Indian        | 1F     |        3 |
+|       65 | Marchant de Lange   | Bowler       |      3 | South African | 1F     |        3 |
+|       66 | Harbhajan Singh     | Bowler       |      5 | Indian        | 1F     |        3 |
+|       67 | Lasith Malinga      | Bowler       |      4 | Srilankan     | 1F     |        3 |
+|       68 | Hardik Pandya       | All Rounder  |      5 | Indian        | 1F     |        3 |
+|       69 | Parthiv Patel       | Wicketkeeper |      3 | Indian        | 1F     |        3 |
+|       70 | Kieron Pollard      | All Rounder  |      4 | West Indian   | 1F     |        3 |
+|       71 | Ambati Rayudu       | Batsman      |      3 | Indian        | 1F     |        3 |
+|       72 | Lendl Simmons       | Batsman      |      4 | West Indian   | 1F     |        3 |
+|       73 | Vinay Kumar         | Bowler       |      3 | Indian        | 1F     |        3 |
+|       74 | Akshay Wakhare      | Bowler       |      1 | Indian        | 1F     |        3 |
+|       75 | Jitesh Sharma       | Batsman      |      1 | Indian        | 1F     |        3 |
+|       76 | MS Dhoni            | All Rounder  |      7 | Indian        | 1A     |        3 |
+|       77 | Ankit Sharma        | Bowler       |      3 | Indian        | 1A     |        3 |
+|       78 | Baba Aparajith      | Bowler       |      1 | Indian        | 1A     |        3 |
+|       79 | Murugan Ashwin      | All Rounder  |      3 | Indian        | 1A     |        3 |
+|       80 | Ravichandran Ashwin | Bowler       |      5 | Indian        | 1A     |        3 |
+|       81 | Rajat Bhatia        | All Rounder  |      3 | Indian        | 1A     |        3 |
+|       82 | Ashok Dinda         | Bowler       |      3 | Indian        | 1A     |        3 |
+|       83 | Faf du Plessis      | Batsman      |      4 | South African | 1A     |        3 |
+|       84 | Jaskaran Singh      | Bowler       |      3 | Indian        | 1A     |        3 |
+|       85 | Mitchell Marsh      | Batsman      |      4 | South African | 1A     |        3 |
+|       86 | Albie Morkel        | Bowler       |      3 | South African | 1A     |        3 |
+|       87 | Ishwar Pander       | All Rounder  |      2 | Indian        | 1A     |        3 |
+|       88 | Irfan Pathan        | All Rounder  |      3 | Indian        | 1A     |        3 |
+|       89 | Thisara Perera      | All Rounder  |      4 | Srilankan     | 1A     |        3 |
+|       90 | Kevin Pieterson     | Batsman      |      4 | English       | 1A     |        3 |
+|       91 | Ajinkya Rahane      | Batsman      |      5 | Indian        | 1G     |        3 |
+|       92 | RP Singh            | Bowler       |      3 | Indian        | 1G     |        3 |
+|       93 | Steven Smith        | Batsman      |      4 | Australian    | 1G     |        3 |
+|       94 | Saurabh Tiwary      | Batsman      |      3 | Indian        | 1G     |        3 |
+|       95 | Virat Kohli         | Batsman      |      7 | Indian        | 1D     |        3 |
+|       96 | Varun Aaron         | Bowler       |      3 | Indian        | 1D     |        3 |
+|       97 | Abu Nechim          | Bowler       |      3 | Indian        | 1D     |        3 |
+|       98 | Samuel Badree       | Bowler       |      4 | West Indian   | 1D     |        3 |
+|       99 | Stuart Binny        | All Rounder  |      3 | Indian        | 1D     |        3 |
+|      100 | Yuzvendra Chahal    | Bowler       |      2 | Indian        | 1D     |        3 |
+|      101 | AB de Villiers      | Batsman      |      7 | South African | 1D     |        3 |
+|      102 | Chris Gayle         | Batsman      |      7 | West Indian   | 1D     |        3 |
+|      103 | Iqbal Abdulla       | Bowler       |      3 | Indian        | 1D     |        3 |
+|      104 | Kedar Jadhav        | Batsman      |      2 | Indian        | 1D     |        3 |
+|      105 | Mandeep Singh       | All Rounder  |      3 | Indian        | 1D     |        3 |
+|      106 | Harshal Patel       | Batsman      |      3 | Indian        | 1D     |        3 |
+|      107 | Lokesh Rahul        | Batsman      |      3 | Indian        | 1D     |        3 |
+|      108 | Kane Richardson     | Bowler       |      2 | Australian    | 1D     |        3 |
+|      109 | Mitchell Starc      | Bowler       |      4 | Australian    | 1D     |        3 |
+|      110 | Shane Watson        | All Rounder  |      4 | Australian    | 1D     |        3 |
+|      111 | David Warner        | Batsman      |      4 | Australian    | 1B     |        3 |
+|      112 | Ashish Reddy        | All Rounder  |      3 | Indian        | 1B     |        3 |
+|      113 | Bipul Sharma        | All Rounder  |      3 | Indian        | 1B     |        3 |
+|      114 | Trent Boult         | Bowler       |      3 | New Zealander | 1B     |        3 |
+|      115 | Shikhar Dhawan      | Batsman      |      5 | Indian        | 1B     |        3 |
+|      116 | Moises Henriques    | All Rounder  |      5 | Australian    | 1B     |        3 |
+|      117 | Siddharth Kaul      | Batsman      |      2 | Indian        | 1B     |        3 |
+|      118 | Deepak Hooda        | Batsman      |      2 | Indian        | 1B     |        3 |
+|      119 | Bhuvneshwar Kumar   | Bowler       |      5 | Indian        | 1B     |        3 |
+|      120 | Abhimanyu Mithun    | Bowler       |      2 | Indian        | 1B     |        3 |
+|      121 | Eoin Morgan         | Batsman      |      5 | English       | 1B     |        3 |
+|      122 | Ashish Nehra        | Bowler       |      5 | Indian        | 1B     |        3 |
+|      123 | Naman Ojha          | Wicketkeeper |      2 | Indian        | 1B     |        3 |
+|      124 | Karn Sharma         | Bowler       |      2 | Indian        | 1G     |        3 |
+|      125 | Barinder Sran       | Bowler       |      3 | Indian        | 1G     |        3 |
+|      126 | Aditya Tare         | Batsman      |      3 | Indian        | 1G     |        3 |
+|      127 | Kane Williamson     | Batsman      |      4 | New Zealander | 1B     |        3 |
+|      128 | Yuvraj Singh        | Batsman      |      5 | Indian        | 1B     |        3 |
+|      129 | Sachin Tendulkar    | All Rounder  |      8 | Indian        | NULL   |        3 |
++----------+---------------------+--------------+--------+---------------+--------+----------+

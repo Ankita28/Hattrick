@@ -39,6 +39,7 @@
             this.nameLabel = new System.Windows.Forms.Label();
             this.playerPoolButton = new System.Windows.Forms.Button();
             this.startButton = new System.Windows.Forms.Button();
+            this.logoutButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.captainPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -96,7 +97,7 @@
             this.playerListBox.FormattingEnabled = true;
             this.playerListBox.ItemHeight = 30;
             this.playerListBox.Location = new System.Drawing.Point(352, 143);
-            this.playerListBox.Margin = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.playerListBox.Margin = new System.Windows.Forms.Padding(15);
             this.playerListBox.Name = "playerListBox";
             this.playerListBox.Size = new System.Drawing.Size(343, 544);
             this.playerListBox.TabIndex = 5;
@@ -164,6 +165,19 @@
             this.startButton.UseVisualStyleBackColor = true;
             this.startButton.Click += new System.EventHandler(this.startButton_Click);
             // 
+            // logoutButton
+            // 
+            this.logoutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logoutButton.Font = new System.Drawing.Font("Impact", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logoutButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.logoutButton.Location = new System.Drawing.Point(686, -3);
+            this.logoutButton.Name = "logoutButton";
+            this.logoutButton.Size = new System.Drawing.Size(125, 45);
+            this.logoutButton.TabIndex = 12;
+            this.logoutButton.Text = "Log Out";
+            this.logoutButton.UseVisualStyleBackColor = true;
+            this.logoutButton.Click += new System.EventHandler(this.button1_Click);
+            // 
             // OwnerScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -171,6 +185,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(123)))), ((int)(((byte)(137)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(813, 829);
+            this.Controls.Add(this.logoutButton);
             this.Controls.Add(this.startButton);
             this.Controls.Add(this.playerPoolButton);
             this.Controls.Add(this.nameLabel);
@@ -207,5 +222,6 @@
         private System.Windows.Forms.Label nameLabel;
         private System.Windows.Forms.Button playerPoolButton;
         private System.Windows.Forms.Button startButton;
+        private System.Windows.Forms.Button logoutButton;
     }
 }
