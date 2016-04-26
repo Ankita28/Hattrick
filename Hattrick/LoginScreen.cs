@@ -30,5 +30,11 @@ namespace Hattrick
             authForm.Show();
         }
 
+        private void continueButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new GuestForm().Show();
+        }
+
     }
 }

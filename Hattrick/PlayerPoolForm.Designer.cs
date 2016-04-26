@@ -42,6 +42,7 @@
             this.playerTextBox = new System.Windows.Forms.TextBox();
             this.addButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.backButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.playerPoolGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.playerpoolBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hattrickDataSet)).BeginInit();
@@ -123,9 +124,9 @@
             this.addButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addButton.Font = new System.Drawing.Font("Impact", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.addButton.Location = new System.Drawing.Point(353, 644);
+            this.addButton.Location = new System.Drawing.Point(353, 626);
             this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(75, 39);
+            this.addButton.Size = new System.Drawing.Size(75, 57);
             this.addButton.TabIndex = 2;
             this.addButton.Text = "Add";
             this.addButton.UseVisualStyleBackColor = false;
@@ -140,12 +141,27 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Enter Player ID to select";
             // 
+            // backButton
+            // 
+            this.backButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(123)))), ((int)(((byte)(137)))));
+            this.backButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backButton.Font = new System.Drawing.Font("Impact", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.backButton.Location = new System.Drawing.Point(434, 626);
+            this.backButton.Name = "backButton";
+            this.backButton.Size = new System.Drawing.Size(75, 57);
+            this.backButton.TabIndex = 4;
+            this.backButton.Text = "Back";
+            this.backButton.UseVisualStyleBackColor = false;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
+            // 
             // PlayerPoolForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(943, 695);
+            this.Controls.Add(this.backButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.addButton);
             this.Controls.Add(this.playerTextBox);
@@ -177,6 +193,7 @@
         private System.Windows.Forms.TextBox playerTextBox;
         private System.Windows.Forms.Button addButton;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button backButton;
 
     }
 }

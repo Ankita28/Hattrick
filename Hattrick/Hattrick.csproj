@@ -55,8 +55,38 @@
     <Compile Include="AuthForm.Designer.cs">
       <DependentUpon>AuthForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="BatsmenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BatsmenForm.Designer.cs">
+      <DependentUpon>BatsmenForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BowlerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BowlerForm.Designer.cs">
+      <DependentUpon>BowlerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomButton.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FinalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalForm.Designer.cs">
+      <DependentUpon>FinalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FixturesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FixturesForm.Designer.cs">
+      <DependentUpon>FixturesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuestForm.Designer.cs">
+      <DependentUpon>GuestForm.cs</DependentUpon>
     </Compile>
     <Compile Include="hattrickDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -83,14 +113,36 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Result.cs" />
     <Compile Include="SplashForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SplashForm.Designer.cs">
       <DependentUpon>SplashForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="TeamDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeamDataForm.Designer.cs">
+      <DependentUpon>TeamDataForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AuthForm.resx">
       <DependentUpon>AuthForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BatsmenForm.resx">
+      <DependentUpon>BatsmenForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BowlerForm.resx">
+      <DependentUpon>BowlerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalForm.resx">
+      <DependentUpon>FinalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FixturesForm.resx">
+      <DependentUpon>FixturesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuestForm.resx">
+      <DependentUpon>GuestForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginScreen.resx">
       <DependentUpon>LoginScreen.cs</DependentUpon>
@@ -112,6 +164,9 @@
     </Compile>
     <EmbeddedResource Include="SplashForm.resx">
       <DependentUpon>SplashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeamDataForm.resx">
+      <DependentUpon>TeamDataForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="hattrickDataSet.xsc">
       <DependentUpon>hattrickDataSet.xsd</DependentUpon>

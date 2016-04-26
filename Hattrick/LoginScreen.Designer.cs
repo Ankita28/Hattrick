@@ -61,6 +61,7 @@
             this.continueButton.TabIndex = 1;
             this.continueButton.Text = "Continue as Guest";
             this.continueButton.UseVisualStyleBackColor = false;
+            this.continueButton.Click += new System.EventHandler(this.continueButton_Click);
             // 
             // LoginScreen
             // 
