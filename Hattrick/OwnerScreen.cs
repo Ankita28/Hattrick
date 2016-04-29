@@ -14,7 +14,7 @@ namespace Hattrick
     public partial class OwnerScreen : Form
     {
         string team;
-        string connectionString = "server=Lenovo-PC;uid=anuraag;pwd=razerbeats296;database=hattrick;";
+        string connectionString = "your_connection_string";
         public OwnerScreen(string team)
         {
             InitializeComponent();
@@ -147,6 +147,12 @@ namespace Hattrick
         {
             this.Hide();
             new LoginScreen().Show();
+        }
+
+        private void leagueButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new GuestForm().Show();
         }
     }
 

@@ -13,7 +13,7 @@ namespace Hattrick
     public partial class PlayerPoolForm : Form
     {
         string teamId;
-        string connectionString = "server=Lenovo-PC;uid=anuraag;pwd=razerbeats296;database=hattrick;";
+        string connectionString = "your_connection_string";
         public PlayerPoolForm(string teamId)
         {
             InitializeComponent();

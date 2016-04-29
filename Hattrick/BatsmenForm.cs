@@ -14,7 +14,7 @@ namespace Hattrick
     public partial class BatsmenForm : Form
     {
         string teamid;
-        string connectionString = "server=Lenovo-PC;uid=anuraag;pwd=razerbeats296;database=hattrick;";
+        string connectionString = "your_connection_string";
         public BatsmenForm(string teamid)
         {
             InitializeComponent();

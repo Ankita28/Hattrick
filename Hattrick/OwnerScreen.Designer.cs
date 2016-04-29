@@ -37,6 +37,7 @@
             this.nameLabel = new System.Windows.Forms.Label();
             this.playerPoolButton = new System.Windows.Forms.Button();
             this.logoutButton = new System.Windows.Forms.Button();
+            this.leagueButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.captainPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -137,13 +138,27 @@
             this.logoutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logoutButton.Font = new System.Drawing.Font("Impact", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logoutButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.logoutButton.Location = new System.Drawing.Point(352, 744);
+            this.logoutButton.Location = new System.Drawing.Point(352, 765);
             this.logoutButton.Name = "logoutButton";
-            this.logoutButton.Size = new System.Drawing.Size(343, 73);
+            this.logoutButton.Size = new System.Drawing.Size(343, 52);
             this.logoutButton.TabIndex = 12;
             this.logoutButton.Text = "Log Out";
             this.logoutButton.UseVisualStyleBackColor = true;
             this.logoutButton.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // leagueButton
+            // 
+            this.leagueButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.leagueButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.leagueButton.Font = new System.Drawing.Font("Impact", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.leagueButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.leagueButton.Location = new System.Drawing.Point(352, 707);
+            this.leagueButton.Name = "leagueButton";
+            this.leagueButton.Size = new System.Drawing.Size(343, 52);
+            this.leagueButton.TabIndex = 13;
+            this.leagueButton.Text = "View League";
+            this.leagueButton.UseVisualStyleBackColor = true;
+            this.leagueButton.Click += new System.EventHandler(this.leagueButton_Click);
             // 
             // OwnerScreen
             // 
@@ -152,6 +167,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(123)))), ((int)(((byte)(137)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(813, 829);
+            this.Controls.Add(this.leagueButton);
             this.Controls.Add(this.logoutButton);
             this.Controls.Add(this.playerPoolButton);
             this.Controls.Add(this.nameLabel);
@@ -184,5 +200,6 @@
         private System.Windows.Forms.Label nameLabel;
         private System.Windows.Forms.Button playerPoolButton;
         private System.Windows.Forms.Button logoutButton;
+        private System.Windows.Forms.Button leagueButton;
     }
 }

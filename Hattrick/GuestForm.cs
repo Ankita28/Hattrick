@@ -34,7 +34,7 @@ namespace Hattrick
 
         private void initResult()
         {
-            string connectionString = "server=Lenovo-PC;uid=anuraag;pwd=razerbeats296;database=hattrick;";
+            string connectionString = "your_connection_string";
             string sql = "select teamname, matches, won, lost, nr, points from leaguetable natural join (teaminfo) order by points desc;";
             MySqlConnection connection = new MySqlConnection(connectionString);
             connection.Open();
@@ -90,15 +90,20 @@ namespace Hattrick
 
         private void fixturesButton_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             new FixturesForm().Show();
         }
 
         private void finalsButton_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Kolkata Knight Riders have won the IPL! Click OK for Full Scorecard");
-            this.Close();
+            this.Hide();
             new FinalForm().Show();
+        }
+
+        private void GuestForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
 
     }

@@ -41,7 +41,7 @@ namespace Hattrick
         private bool loginCheck(string username, string password)
         {
             int index = 999;
-            string connectionString = "server=Lenovo-PC;uid=anuraag;pwd=razerbeats296;database=hattrick;";
+            string connectionString = "your_connection_string";
             string sql = "select username, password from users";
             MySqlConnection connection = new MySqlConnection(connectionString);
             connection.Open();
@@ -71,7 +71,7 @@ namespace Hattrick
 
         private string getTeam(string username)
         {
-            string connectionString = "server=Lenovo-PC;uid=anuraag;pwd=razerbeats296;database=hattrick;";
+            string connectionString = "your_connection_string";
             string sql = "select teamname from users natural join teaminfo where username=\""+username+"\";";
             MySqlConnection connection = new MySqlConnection(connectionString);
             connection.Open();

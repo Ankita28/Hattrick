@@ -109,7 +109,7 @@
             this.Name = "GuestForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "League";
-            this.Load += new System.EventHandler(this.GuestForm_Load);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.GuestForm_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.leagueGrid)).EndInit();
             this.ResumeLayout(false);
 

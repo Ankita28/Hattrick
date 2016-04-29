@@ -32,7 +32,7 @@ namespace Hattrick
 
         private void initResult()
         {
-            string connectionString = "server=Lenovo-PC;uid=anuraag;pwd=razerbeats296;database=hattrick;";
+            string connectionString = "your_connection_string";
             string sql = "select hometeamid, awayteamid, winning_innings, result from fixtures";
             MySqlConnection connection = new MySqlConnection(connectionString);
             connection.Open();

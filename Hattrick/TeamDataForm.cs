@@ -13,12 +13,23 @@ namespace Hattrick
     public partial class TeamDataForm : Form
     {
         string team;
-        string connectionString = "server=Lenovo-PC;uid=anuraag;pwd=razerbeats296;database=hattrick;";
+        string connectionString = "your_connection_string";
         public TeamDataForm(string team)
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
             this.team = team;
             this.Text = team;
+            Image image = Image.FromFile(getPath());
+            logoPictureBox.Image = image;
+            logoPictureBox.Height = image.Height;
+            logoPictureBox.Width = image.Width;
+            captainLabel.Text = "Captain: "+getCaptain();
+            Image captain = Image.FromFile(getCaptainPath());
+            captainPictureBox.Image = captain;
+            captainPictureBox.Width = captain.Width;
+            captainPictureBox.Height = captain.Height;
+            this.Update();
             this.Update();
         }
 
@@ -88,6 +99,56 @@ namespace Hattrick
         {
             this.Close();
             new BowlerForm(getTeamId()).Show();
+        }
+
+        private string getPath()
+        {
+            switch (team)
+            {
+                case "Rising Pune Supergiants":
+                    return "C://Users//Anuraag//Documents//Visual Studio 2012//Projects//Hattrick//Res//rpsg.jpg";
+                case "Sunrisers Hyderabad":
+                    return "C://Users//Anuraag//Documents//Visual Studio 2012//Projects//Hattrick//Res//srh.jpg";
+                case "Kings XI Punjab":
+                    return "C://Users//Anuraag//Documents//Visual Studio 2012//Projects//Hattrick//Res//kxip.png";
+                case "Royal Challengers Bangalore":
+                    return "C://Users//Anuraag//Documents//Visual Studio 2012//Projects//Hattrick//Res//rcb.png";
+                case "Delhi Daredevils":
+                    return "C://Users//Anuraag//Documents//Visual Studio 2012//Projects//Hattrick//Res//dd.jpg";
+                case "Mumbai Indians":
+                    return "C://Users//Anuraag//Documents//Visual Studio 2012//Projects//Hattrick//Res//mi.jpg";
+                case "Kolkata Knight Riders":
+                    return "C://Users//Anuraag//Documents//Visual Studio 2012//Projects//Hattrick//Res//kkr.png";
+                case "Gujarat Lions":
+                    return "C://Users//Anuraag//Documents//Visual Studio 2012//Projects//Hattrick//Res//gj.gif";
+
+            }
+            return null;
+        }
+
+        private string getCaptainPath()
+        {
+            switch (team)
+            {
+                case "Rising Pune Supergiants":
+                    return "C://Users//Anuraag//Documents//Visual Studio 2012//Projects//Hattrick//Res//dhoni.jpg";
+                case "Sunrisers Hyderabad":
+                    return "C://Users//Anuraag//Documents//Visual Studio 2012//Projects//Hattrick//Res//warner.jpg";
+                case "Kings XI Punjab":
+                    return "C://Users//Anuraag//Documents//Visual Studio 2012//Projects//Hattrick//Res//miller.png";
+                case "Royal Challengers Bangalore":
+                    return "C://Users//Anuraag//Documents//Visual Studio 2012//Projects//Hattrick//Res//virat.png";
+                case "Delhi Daredevils":
+                    return "C://Users//Anuraag//Documents//Visual Studio 2012//Projects//Hattrick//Res//zaheer.png";
+                case "Mumbai Indians":
+                    return "C://Users//Anuraag//Documents//Visual Studio 2012//Projects//Hattrick//Res//rohit.png";
+                case "Kolkata Knight Riders":
+                    return "C://Users//Anuraag//Documents//Visual Studio 2012//Projects//Hattrick//Res//rahane.jpg";
+                case "Gujarat Lions":
+                    return "C://Users//Anuraag//Documents//Visual Studio 2012//Projects//Hattrick//Res//raina.png";
+
+            }
+            return null;
         }
     }
 }

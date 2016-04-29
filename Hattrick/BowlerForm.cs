@@ -14,7 +14,7 @@ namespace Hattrick
     public partial class BowlerForm : Form
     {
         string teamid;
-        string connectionString = "server=Lenovo-PC;uid=anuraag;pwd=razerbeats296;database=hattrick;";
+        string connectionString = "your_connection_string";
         public BowlerForm(string teamid)
         {
             InitializeComponent();
@@ -30,10 +30,10 @@ namespace Hattrick
             MySqlDataAdapter sAdapter = new MySqlDataAdapter(sCommand);
             MySqlCommandBuilder sBuilder = new MySqlCommandBuilder(sAdapter);
             DataSet sDs = new DataSet();
-            sAdapter.Fill(sDs, "playerperformance_batsmen");
-            DataTable sTable = sDs.Tables["playerperformance_batsmen"];
+            sAdapter.Fill(sDs, "playerperformance_bowler");
+            DataTable sTable = sDs.Tables["playerperformance_bowler"];
             connection.Close();
-            performanceGrid.DataSource = sDs.Tables["playerperformance_batsmen"];
+            performanceGrid.DataSource = sDs.Tables["playerperformance_bowler"];
             performanceGrid.ReadOnly = true;
             performanceGrid.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             BindingSource bSource = new BindingSource();
